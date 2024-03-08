@@ -11,38 +11,46 @@
     <title>OhMyFood</title>
 </head>
 <body>
-    <header>
-        <img src="./logo/ohmyfood.png" alt="Logo du site">
-        <span><i class="fa-solid fa-location-dot"></i>Paris, Belleville</span>
+    <header>       
+        <div class="first_header">
+            <i class="fa-solid fa-arrow-left" style="display: none;"></i>
+            <img src="./logo/ohmyfood.png" alt="Logo du site">
+        </div>
+        <div class="location">
+            <span><i class="fa-solid fa-location-dot"></i>Paris, Belleville</span>
+        </div>
     </header>
     <main>
+        <div class="main_container">
         <section class="section_cta">
             <h1>Réservez le menu qui vous convient</h1>
             <span>Découvrez des restaurants d'exception, sélectionnés par nos soins.</span>
             <Button class="btn_basic">Explorer nos restaurants</Button>
         </section>
-        <section>
+        <section class="section_using">
             <h2>Fonctionnement</h2>
-            <div class="Step">
+            <div class="step_case">
+            <div class="step">
                 <span class="step_number">1</span>
                 <div class="content_border">
                     <i class="fa-solid fa-mobile-screen-button"></i>
                     <span>Choisissez un restaurant</span>
                 </div>
             </div>
-            <div class="Step">
+            <div class="step">
                 <span class="step_number">2</span>
                 <div class="content_border">
                     <i class="fa-solid fa-list"></i>
                     <span>Composez votre menu</span>
                 </div>
             </div>
-            <div class="Step">
+            <div class="step">
                 <span class="step_number">3</span>
                 <div class="content_border">
                     <i class="fa-solid fa-store"></i>
                     <span>Dégustez au restaurant</span>
                 </div>
+            </div>
             </div>
         </section>
         <section class="card_section">
@@ -102,9 +110,8 @@
                 </a>
                 <a href="#">
                     <article class="card">
-                    <div class="img_popup">
+                    <div class="img">
                     <img src="./restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du restaurant">
-                    <span class="text_wrap">Nouveau</span>
                     </div>
                     <div class="card_content">
                         <div class="text_content">
@@ -119,9 +126,20 @@
                 </a>
             </div>
         </section>
+        </div>
     </main>
     <footer>
-
+        <div class="footer_container">
+            <div class="footer_logo">
+                <img src="./logo/ohmyfood.png" alt="Logo du site">
+            </div>
+            <ul class="footer_link">
+                <a href="#"><li><i class="fa-solid fa-utensils"></i>Proposer un restaurant</li></a>
+                <a href="#"><li><i class="fa-solid fa-handshake-angle"></i>Devenir partenaire</li></a>
+                <a href="#"><li>Mentions légales</li></a>
+                <a href="#"><li>Contact</li></a>
+            </ul>
+        </div>
     </footer>
 </body>
 </html>
