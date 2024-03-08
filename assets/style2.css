@@ -1,0 +1,95 @@
+/****** Genral rules ******/
+
+
+
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-color :#f3f3f3;
+    --second-color: #99e2d0;
+    --third-color:#008766;
+    --fourth-color:#89c8fa;
+    --fifth-color:#003a68;
+    --sixth-color:#9356dc;
+    --grey-color:#7e7e7e;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.btn_basic {
+    background-color: var(--sixth-color);
+    background: linear-gradient(0deg, var(--sixth-color)0% , rgb(255, 121.13, 217.52)100% );
+    font-size: 15px;
+    color: var(--main-color);
+    border-radius: 25px;
+    border: 0;
+    width: 200px;
+    height: 40px;
+}
+
+.fa-regular {
+    font-size: 25px;
+}
+.card {
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+  }
+.card img {
+    object-fit: cover;
+  }
+
+.popup {
+    position: relative;
+}
+.popup .text_wrap {
+    position: absolute;
+    right: 5%;
+    top: 8%;
+    color: var(--third-color);
+    background: var(--second-color);
+    border: 3px solid var(--second-color);
+    border-radius: 2px;
+    padding: 3px 3px 3px 3px;
+    font-weight: 420;
+}
+
+/******** Mobile First **********/
+@media (max-width:767.97px) {
+    
+ 
+    body{
+            width: 100%;
+            padding: 0;
+            margin: 0;
+    }
+    
+    
+    /****** Comportement du header ******/
+    
+    
+header {
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.first_header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 10px;
+        padding-right: 55px;
+        padding-top: 25px;
+        padding-bottom: 10px;
+        box-shadow: 0px 3px 5px lightgray;
+    }
+  
+header img {
+        width: 60%;
+        height: 45%; 
+    }
+
+}
