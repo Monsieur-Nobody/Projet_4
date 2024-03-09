@@ -58,13 +58,12 @@ a {
 }
 
 /******** Mobile First **********/
-@media (max-width:767.97px) {
     
  
 body{
-            width: 100%;
-            padding: 0;
-            margin: 0;
+        max-width:767.97px;
+        padding: 0;
+        margin: 0;
 }
     
     
@@ -102,16 +101,17 @@ header {
 header img {
         width: 50%;
         height: 45%; 
+        object-fit: cover;
     }
 /******************/
 /******Section Menu *******/
 .main_menu {
-    position: relative;
+    /* position: relative; */
 }
 .main_menu .banner img {
     height: 275px;
     width: 100%;
-    position: absolute;
+    /* position: absolute; */
     z-index: 0;
 }
 
@@ -141,6 +141,11 @@ header img {
     padding-left: 15px;
     padding-right: 25px;
 }
+
+.menu_content button {
+    border: none;
+    
+}
 .content_title {
     width: 15%;
      
@@ -159,7 +164,16 @@ header img {
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     position: relative;
-    line-height: 24px;
+    
+}
+.choice_content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    padding-left: 10px;
+    font-size: 18px;
+    gap: 8px;
 }
 
 .choice_title {
@@ -170,6 +184,7 @@ header img {
     bottom:15%;
     right: 5%;
     font-weight: bold;
+    font-size: 18px;
 }
 
 .button_order {
@@ -220,4 +235,3 @@ header img {
 /******************/
 
 
-}
