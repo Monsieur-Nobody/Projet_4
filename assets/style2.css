@@ -105,9 +105,9 @@ header img {
     }
 /******************/
 /******Section Menu *******/
-.main_menu {
-    /* position: relative; */
-}
+/* .main_menu {
+    /* position: relative; 
+}*/
 .main_menu .banner img {
     height: 275px;
     width: 100%;
