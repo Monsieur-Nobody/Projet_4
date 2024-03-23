@@ -20,7 +20,6 @@ a {
     text-decoration: none;
 }
 .btn_basic {
-    background-color: var(--sixth-color);
     background: linear-gradient(0deg, var(--sixth-color)0% , rgb(255, 121.13, 217.52)100% );
     font-size: 15px;
     color: var(--main-color);
@@ -56,8 +55,16 @@ a {
     font-weight: 420;
 }
 /******************/
+/**********Animation***********/
+
+.btn_basic:hover{
+    transition: background-color 0.3s ease ;
+    background: linear-gradient(0deg, var(--sixth-color)0% , rgb(255, 121.13, 217.52)60% );
+    box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
+}
 
 
+/******************/
 /******** Mobile First **********/
     
  
@@ -215,6 +222,7 @@ header span {
 .card img {
     width: 100%;
     border-radius: 10px 10px 0 0 ;
+    object-fit: cover;
 }
 
 .card .img img {
@@ -239,6 +247,7 @@ a .card {
     position: absolute;
     right: 5%;
     bottom : 50%;
+    pointer-events: none;
  }
 
 /******************/
