@@ -63,6 +63,23 @@ a {
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
 }
 
+.button_heart {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+.button_heart .fa-solid {
+    display: none;
+    font-size: 25px;
+}
+
+.button_heart:active .fa-regular {
+    display: none;
+}
+
+.button_heart:active .fa-solid {
+    display: inline-block;
+}
 
 /******************/
 /******** Mobile First **********/
