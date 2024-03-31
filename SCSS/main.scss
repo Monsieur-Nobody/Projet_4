@@ -1,0 +1,126 @@
+/**** Section CTA ******/
+
+.section_cta {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    text-align: center;
+    background: rgb(255,255,255);
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 24%, rgba(224,224,224,1) 100%);
+    padding-bottom: 40px;
+    }
+
+.section_cta h1 {
+ text-wrap: wrap;
+ font-size: 25px;
+}
+
+.section_cta span {
+    padding: 10px 10px 18px 10px;
+}
+
+/******************/
+
+
+/****** Section Fonctionnement *****/
+
+
+
+.section_fonctionnement {
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    
+}
+.step_case {
+    display:flex ;
+    flex-direction: column;
+    gap: 25px;
+}
+.step{
+    border: 1px transparent black;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.content_border {
+    padding-left: 40px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.content_border span {
+    font-weight: bold;
+    font-size: 20px;
+}
+.step_number {
+    text-align: center;
+    width: 15px;
+    font-size: 15px;
+    color: var(--main-color);
+    position: absolute;
+    top: 50%;
+    left: -1%;
+    transform: translate( -50%,-50%);
+    background-color: var(--sixth-color);
+    border: 3px solid var(--sixth-color);
+    border-radius:50%; 
+}
+.step_case .fa-solid {
+    padding-right: 30px;
+}
+
+/******************/
+/******* Section card restaurants ****/
+
+.card_section {
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 80px;
+    background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 98%, rgba(224,224,224,1) 100%);
+}
+
+.card_section .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.card img {
+    width: 100%;
+    border-radius: 10px 10px 0 0 ;
+    object-fit: cover;
+}
+
+.card .img img {
+    max-height: 212px;
+}
+
+
+.card_content .text_content {
+    padding-left: 15px;
+    padding-bottom: 10px;
+    line-height: 2px;
+}
+.card_content {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+}
+
+.card_like {
+    cursor: pointer;
+    padding-right: 10px;
+ }
+
+/******************/
+
+

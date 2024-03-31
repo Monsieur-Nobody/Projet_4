@@ -70,14 +70,8 @@ body{
     
 /****** Comportement du header ******/
     
-    
-header {
-        /* display:flex;
-        flex-direction: column;
-        align-items: center; */
-        width: 100%;
-}
-.first_header {
+
+.first_header-variant {
         display: flex;
         justify-content: flex-start;
         gap: 20%;
@@ -90,11 +84,11 @@ header {
         width: 100%;
     }
 
-.first_header a {
+.first_header-variant a {
     padding-left: 5px;
 }
 
-.first_header .fa-arrow-left {
+.first_header-variant .fa-arrow-left {
     padding-left: 15px;
 }
 header img {
@@ -163,13 +157,12 @@ main {
     padding-bottom: 10px;
 }
 .menu_choice {
-    display: flex;
-    flex-direction: row;
     padding: 8px 0px 9px 10px;
-    width: 100%;
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-    position: relative;
+    /* position: relative; */
+    display: flex;
+    justify-content: space-between;
     
 }
 .choice_content {
@@ -186,11 +179,12 @@ main {
     font-weight: bold;
 }
 .choice_price {
-    position: absolute;
-    bottom:15%;
-    right: 5%;
     font-weight: bold;
     font-size: 18px;
+    padding-right: 1%;  
+    display: flex;
+    padding-top: 3%;
+    justify-content: center;
 }
 
 .button_order {
@@ -200,7 +194,38 @@ main {
    padding-top: 40px;
    padding-bottom: 40px;
 }
+
+.fa-circle-check {  
+    color: var(--third-color);
+    overflow: hidden;
+}
+
+.menu_choice .choice_price {
+    height: auto;
+}
+.choice_price .fa-circle-check {
+    height: 100%;
+    display: none;
+}
+
+@keyframes validation {
+    0% { transform: scale(0);}
+    25% { background-color: var(--third-color);}
+    100% { transform: scale(1); background-color: var(--third-color);}
+}
 /******************/
+
+/**********animation ****/
+
+
+
+
+
+
+
+
+
+
 /***** Footer ****/
 
 .footer_container {
