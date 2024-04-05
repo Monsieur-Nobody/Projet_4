@@ -1,0 +1,23 @@
+*{
+    font-family: "Roboto", sans-serif;
+}
+
+:root {
+    --main-color :#f3f3f3;
+    --second-color: #99e2d0;
+    --third-color:#008766;
+    --fourth-color:#89c8fa;
+    --fifth-color:#003a68;
+    --sixth-color:#9356dc;
+    --grey-color:#7e7e7e;
+}
+body{
+    max-width: 767.97px;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
