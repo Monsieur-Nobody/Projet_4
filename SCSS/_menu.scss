@@ -1,0 +1,21 @@
+.restaurant_titre{
+        .fa-regular {
+            right: 8%;
+            font-size: 1.7rem;
+            position: absolute;
+}
+.fa-solid {
+    right: 8%;
+    color: var(--sixth-color);
+    font-size: 1.7rem;
+    position: absolute;
+    display: none;
+}
+&:hover .fa-regular {
+    display: none;    
+}
+&:hover .fa-solid{
+    display: block;
+    animation: scale 2s ease;
+}
+}

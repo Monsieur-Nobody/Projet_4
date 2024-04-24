@@ -2,84 +2,14 @@
 
 
 
-*{
-    font-family: "Roboto", sans-serif;
-}
 
-:root {
-    --main-color :#f3f3f3;
-    --second-color: #99e2d0;
-    --third-color:#008766;
-    --fourth-color:#89c8fa;
-    --fifth-color:#003a68;
-    --sixth-color:#9356dc;
-    --grey-color:#7e7e7e;
-}
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.button_order .btn_basic {
-    width: 50%;
-    height: 50px;
-}
-.btn_basic {
-    background: linear-gradient(0deg, var(--sixth-color)0% , rgb(255, 121.13, 217.52)100% );
-    font-size: 1.5rem;
-    color: var(--main-color);
-    border-radius: 25px;
-    border: 0;
-    padding-top: 2%;
-    padding-bottom: 2%;
-    /* width: 50%;
-    height: 100%; */
-}
-
-.fa-regular {
-    font-size: 25px;
-}
-.card {
-    background-color: white;
-    border-radius: 20px;
-    filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
-  }
-.card img {
-    object-fit: cover;
-  }
-
-/* .popup {
-    position: relative;
-}
-.popup .text_wrap {
-    position: absolute;
-    right: 5%;
-    top: 8%;
-    color: var(--third-color);
-    background: var(--second-color);
-    border: 3px solid var(--second-color);
-    border-radius: 2px;
-    padding: 3px 3px 3px 3px;
-    font-weight: 420;
-} */
-
-/******** Mobile First **********/
-    
- 
-body{
-        max-width:767.97px;
-        padding: 0;
-        margin: 0;
-        background-color: var(--main-color);
-}
-    
     
 /****** Comportement du header ******/
     
 header {
     display: flex;
     align-items: center;
-    gap: -30%;
+   
     padding-top: 2%;
     padding-bottom: 2%;
 }
@@ -180,7 +110,7 @@ background-color: var(--main-color);
 
 .content_titre {
     position: relative;
-    width: 15%;
+    width: 100%;
     
      
 }
@@ -188,17 +118,16 @@ background-color: var(--main-color);
     text-transform: uppercase;
     font-weight: 300;
     padding-bottom: 10px;
+    width: 50%;
 }
-.content_titre .titre_bordure {
+.content_titre  .titre_bordure {
     border-top: 3px solid var(--second-color);
-    width: 60%;
+    width: 20%;
     position: absolute;
-    top: 70%;
+    top: 65%;
+    border: 1px solid red;
 }
 #titre_bordure-entree{
-    width: 70%;
-}
-#titre_bordure-desserts {
     width: 70%;
 }
 
@@ -209,6 +138,7 @@ background-color: var(--main-color);
     border-radius: 20px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     width: 100%;
+    overflow: hidden;
     text-overflow: ellipsis;
 }
 
@@ -223,37 +153,48 @@ background-color: var(--main-color);
     padding-left: 10px;
     font-size: 1rem;
     line-height: 155%;
-     text-overflow: ellipsis;
+    overflow: hidden;
     white-space: nowrap;
+    z-index: 1;
 }
 
 .menu_titre {
     font-weight: bold;
-    line-height: 60%;
+    line-height: 100%;
     padding-top: 6%;
-}
-h3 {
+    overflow: hidden;
+    text-overflow: ellipsis; 
     margin: 0;
+    
+}
+
+.menu_description span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 100%;
 }
 
 .menu_check_icon {
     background-color: var(--second-color);
-    display: none;
     padding: 0px;
     margin: 0px;
-    width: 25%;
-    height:3.5rem;
+    width: 0%;
+    height:4rem;
     border-radius: 0 20px 20px 0;
-}
-
-.menu:hover .menu_check_icon {
     display: flex;
     justify-content: center;
     align-items: center;
     color: var(--main-color);
+    transition: width 2s;
+    z-index: 10;
+}
+
+.menu:hover .menu_check_icon {
+    width: 25%;
 }
 .menu_price {
-    display: block;
+
     font-weight: bold;
     font-size: 18px;    
     padding-right: 4%;
@@ -266,9 +207,6 @@ h3 {
    padding-top: 40px;
     
 }
-/******************/
-
-/**********animation ****/
 
 
 
@@ -278,44 +216,5 @@ h3 {
 
 
 
-
-/***** Footer ****/
-
-.footer_container {
-    display: flex;
-    flex-direction: column;
-    padding-top: 30px;
-    background-color: #353535;
-    color: var(--main-color);
-    
-}
-.footer_container .footer_logo {
-    padding-left: 25px;
-}
-.footer_container .footer_logo img {
-    width: 40%;
-    filter: invert(1);
-}
-
-.footer_link {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 25px;
-    gap: 10px;
-}
- .footer_link .fa-solid {
-    color: var(--main-color);
-    padding-right: 5%;
- }
-.footer_link .fa-handshake-angle {
-    padding-right: 3%;
-}
-
-.footer_link li {
-    list-style-type: none;   
-}
-
-/******************/
 
 

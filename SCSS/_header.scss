@@ -8,6 +8,9 @@ header {
     width: 50%;
     height: 45%;
   }
+  a {
+    padding-left: 3%;
+  }
   input {
   text-align: start;
   border: transparent;
@@ -17,6 +20,7 @@ header {
     color: black;
     font-size: 1rem;
     font-weight: bold;
+    text-align: center;
   }
 }
   .header_img {
@@ -41,6 +45,19 @@ header {
     .fa-location-dot {
       color: black;
     }
+  }
+}
+
+.header_variant {
+  display: flex;
+  justify-content: center;
+  align-items:center ;   
+  flex-direction: row;
+  padding-top: 2%;
+  padding-bottom: 2%;
+
+  a:first-child {
+    padding-right: 20%;
   }
 }
 
