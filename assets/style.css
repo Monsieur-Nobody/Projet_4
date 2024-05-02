@@ -266,6 +266,9 @@ header {
   align-items: center;
   gap: 4px;
 }
+header img {
+  width: 45%;
+}
 header a {
   padding-left: 3%;
 }
