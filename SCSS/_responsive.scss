@@ -61,11 +61,14 @@ main {
     justify-content: center;
 }
 
-.footer_container {
+footer {
 
     .footer_logo {
-        padding-top: 3%;
         width: 60%;
+
+        img {
+            width: 45%;
+        }
     }
 
 }
@@ -109,7 +112,7 @@ main {
         }
     }
     }
-    .footer_container {
+    footer {
                 flex-direction: row-reverse;
                 align-items: center;
                 padding-right: 3%;
