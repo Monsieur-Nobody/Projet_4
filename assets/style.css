@@ -100,8 +100,7 @@ a {
   color: var(--main-color);
   border-radius: 25px;
   border: 0;
-  padding-top: 2%;
-  padding-bottom: 2%;
+  height: 50px;
 }
 .btn_basic:hover {
   background: linear-gradient(0deg, var(--sixth-color) 0%, rgb(255, 121, 218) 60%);
@@ -163,6 +162,7 @@ a {
   display: flex;
   flex-direction: column;
   gap: 25px;
+  padding-left: 3%;
 }
 .section_fonctionnement .section_etapes .etape {
   border-radius: 20px;
@@ -170,6 +170,10 @@ a {
   flex-direction: row;
   position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  width: 95%;
+  padding-left: 2%;
+  font-size: 1rem;
+  font-weight: bold;
 }
 .section_fonctionnement .section_etapes .etape .etape_numero {
   text-align: center;
@@ -190,16 +194,12 @@ a {
   color: var(--sixth-color);
 }
 .section_fonctionnement .section_etapes .etape .etape_contenu {
-  padding-left: 5%;
+  padding-left: 8%;
   padding-bottom: 20px;
   padding-top: 20px;
   width: 100%;
   display: flex;
   align-items: center;
-}
-.section_fonctionnement .section_etapes .etape .etape_contenu span {
-  font-weight: bold;
-  font-size: 1.2rem;
 }
 .section_fonctionnement .section_etapes .etape .etape_contenu .fa-solid {
   padding-right: 4%;
@@ -266,10 +266,6 @@ header {
   align-items: center;
   gap: 4px;
 }
-header img {
-  width: 50%;
-  height: 45%;
-}
 header a {
   padding-left: 3%;
 }
@@ -315,14 +311,20 @@ header .header_location .fa-location-dot {
 
 .header_variant {
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-direction: row;
   padding-top: 2%;
   padding-bottom: 2%;
 }
+.header_variant img {
+  width: 100%;
+}
 .header_variant a:first-child {
   padding-right: 20%;
+}
+.header_variant a:last-child {
+  width: 45%;
+  text-align: center;
 }
 
 .footer_container {
@@ -548,7 +550,7 @@ main {
   padding: 0px;
   margin: 0px;
   width: 0%;
-  height: 4rem;
+  height: 72px;
   border-radius: 0 20px 20px 0;
   display: flex;
   justify-content: center;
@@ -575,27 +577,33 @@ main {
   body {
     max-width: 100%;
   }
-  header img {
-    width: 30%;
-  }
   .header_variant {
-    justify-content: flex-start;
-    gap: 12%;
-    padding-left: 0;
+    justify-content: start;
   }
   .header_variant .fa-solid {
     color: black;
   }
   .header_variant img {
-    width: 45%;
+    width: 53%;
+  }
+  .section_fonctionnement {
+    width: 90%;
+    padding-left: 5%;
+    background-color: var(--main-color);
   }
   .section_fonctionnement .section_etapes {
     flex-direction: row;
+    justify-content: space-between;
+    padding-left: 0%;
+  }
+  .section_fonctionnement .section_etapes .etape {
+    padding-left: 1%;
+    width: 30%;
+    font-size: 1rem;
   }
   .section_fonctionnement .section_etapes .etape .etape_contenu {
     padding-left: 6%;
     text-wrap: nowrap;
-    font-size: 1rem;
   }
   main {
     background-color: var(--main-color);
@@ -603,7 +611,10 @@ main {
   .main {
     background-color: #f6f6f6;
     max-width: 1055px;
-    left: 10%;
+    margin: auto;
+  }
+  .section_restaurants {
+    background: #eaeaea;
   }
   .restaurant_titre {
     display: flex;
@@ -626,65 +637,38 @@ main {
     animation: fadeOut 4s ease-in-out forwards;
   }
 }
-@media (min-width: 1024px) {
-  header img {
-    width: 20%;
-  }
-  header .header_location {
-    font-size: 1.5rem;
-  }
-  .section_reservation h1 {
-    font-size: 1.8rem;
-  }
-  .section_reservation span {
-    font-size: 1.4rem;
-  }
-  .section_reservation a {
-    width: 65%;
-  }
-  .btn_basic {
-    font-weight: bold;
-    width: 40%;
-    max-width: 218px;
-    max-height: 50px;
-  }
+@media (min-width: 767.95px) and (min-width: 1024px) {
   .section_fonctionnement {
-    display: flex;
-    flex-direction: column;
-    margin-left: 5%;
-    max-width: 1400px;
-  }
-  .section_fonctionnement .section_etapes {
-    gap: 10%;
-    padding-left: 0;
-    padding-right: 0;
-  }
-  .section_fonctionnement .section_etapes .etape .etape_contenu {
-    padding-right: 13px;
-  }
-  .section_restaurants {
-    margin-top: 2%;
+    width: 73%;
     padding-left: 15%;
   }
+  .section_restaurants {
+    padding-left: 15%;
+    padding-bottom: 3%;
+  }
   .section_restaurants .cards {
-    gap: 5%;
+    gap: 8%;
     flex-direction: row;
     flex-wrap: wrap;
   }
   .section_restaurants .cards .card {
     margin-top: 3%;
     width: 40%;
+    justify-content: center;
   }
   .footer_container {
     flex-direction: row-reverse;
     align-items: center;
-    gap: 5%;
-    justify-content: flex-start;
+    padding-right: 3%;
+    text-align: right;
   }
   .footer_container .footer_logo {
-    padding-right: -20px;
-    width: 20%;
+    padding-left: 6%;
+    width: 15%;
     padding-top: 0;
+  }
+  .footer_container .footer_logo img {
+    width: 80%;
   }
   .footer_container .footer_link {
     flex-direction: row;
