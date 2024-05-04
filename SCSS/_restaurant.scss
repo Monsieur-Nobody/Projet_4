@@ -90,7 +90,7 @@ background-color: var(--main-color);
     text-overflow: ellipsis;
 
     &:hover .menu_check_icon {
-        width: 25%;
+        width: 70px;
     }
 }
 
@@ -99,6 +99,7 @@ background-color: var(--main-color);
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    overflow: hidden;
     
 }
 .menu_description {
