@@ -1,6 +1,7 @@
 footer {
-    display: flex;
-    flex-direction: column;
+    @include display-flex_column;
+    // display: flex;
+    // flex-direction: column;
     padding-top: 30px;
     background-color: #353535;
     color: var(--main-color);
@@ -14,8 +15,9 @@ footer {
     }
 }
     .footer_link {
-        display: flex;
-        flex-direction: column;
+        @include display-flex_column;
+        // display: flex;
+        // flex-direction: column;
         justify-content: flex-start;
         padding-left: 25px;
         gap: 10px;

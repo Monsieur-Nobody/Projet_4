@@ -35,51 +35,6 @@
 }
 
 
-.letter:nth-child(1) {
-  animation: bounce 1s ease-in-out infinite alternate; /* Alternance de l'animation */
-  animation-delay: 0s;
-}
-
-.letter:nth-child(2) {
-  animation: bounce 1s ease-in-out infinite alternate; /* Alternance de l'animation */
-  animation-delay: 0.1s;
-}
-
-.letter:nth-child(3) {
-  animation: bounce 1s ease-in-out infinite alternate; /* Alternance de l'animation */
-  animation-delay: 0.2s;
-}
-
-.letter:nth-child(4) {
-  animation: bounce 1s ease-in-out infinite alternate; /* Alternance de l'animation */
-  animation-delay: 0.3s;
-}
-
-.letter:nth-child(5) {
-  animation: bounce 1s ease-in-out infinite alternate; /* Alternance de l'animation */
-  animation-delay: 0.4s;
-}
-
-.letter:nth-child(6) {
-  animation: bounce 1s ease-in-out infinite alternate; /* Alternance de l'animation */
-  animation-delay: 0.5s;
-}
-
-.letter:nth-child(7) {
-  animation: bounce 1s ease-in-out infinite alternate; /* Alternance de l'animation */
-  animation-delay: 0.6s;
-}
-
-.letter:nth-child(8) {
-  animation: bounce 1s ease-in-out infinite alternate; /* Alternance de l'animation */
-  animation-delay: 0.7s;
-}
-
-
-
-
-
-
 
 
 
@@ -94,11 +49,6 @@
   
 
   &:hover {
-    // background: linear-gradient(
-    //   0deg,
-    //   var(--sixth-color) 0%,
-    //   rgb(255, 121.13, 217.52) 60%
-    // );
     box-shadow: 0px 4px 15px 0px rgba(0, 0, 0, 0.35);
     opacity: 0.9;
   }
@@ -131,8 +81,9 @@
 }
 
 .section_reservation {
-  display: flex;
-  flex-direction: column;
+  @include display-flex_column;
+  // display: flex;
+  // flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -159,8 +110,9 @@
   padding-right: 20px;
 
   .section_etapes {
-    display: flex;
-    flex-direction: column;
+    @include display-flex_column;
+    // display: flex;
+    // flex-direction: column;
     gap: 25px;
     padding-left: 3%;
   
@@ -216,16 +168,18 @@
 
 
 .section_restaurants {
-    display: flex;
-    flex-direction: column;
+    @include display-flex_column;
+    // display: flex;
+    // flex-direction: column;
     padding-left: 15px;
     padding-right: 15px;
     padding-bottom: 80px;
     background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 98%, rgba(224,224,224,1) 100%);
 
     .cards {
-        display: flex;
-        flex-direction: column;
+        @include display-flex_column;
+        // display: flex;
+        // flex-direction: column;
         gap: 20px;
 
         .card {

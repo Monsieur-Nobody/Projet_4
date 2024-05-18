@@ -1,6 +1,7 @@
 header {
-  display: flex;
-  flex-direction: column;
+  @include display-flex_column;
+  // display: flex;
+  // flex-direction: column;
   align-items: center;
   gap: 4px;
   img {
